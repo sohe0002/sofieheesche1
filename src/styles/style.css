@@ -1,0 +1,13 @@
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* Kun 50%, fordi vi har duplikeret billederne */
+  }
+}
+.animate-slide {
+  animation: slide 120s linear infinite; /* Længere tid for jævn animation */
+}
