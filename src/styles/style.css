@@ -3,11 +3,11 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(
-      -50%
-    ); /* Kun 50%, fordi vi har duplikeret billederne */
+    transform: translateX(-50%);
   }
 }
+
 .animate-slide {
-  animation: slide 160s linear infinite; /* Længere tid for jævn animation */
+  animation: slide 2000s linear infinite; /* Længere tid for jævn animation */
+  width: calc(400px * 7); /* 7 billeder inklusiv duplikater */
 }

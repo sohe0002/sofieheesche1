@@ -16,7 +16,7 @@ import logo from "../assets/images/logo.svg";
 ---
 
 <MainLayout title="Sofie Heesche">
-  <article class="bg-beige px-20 md:px-40 pb-20">
+  <article class="bg-beige px-16 md:px-40 pb-20">
     <section>
       <div class="circle" id="rotating-circle">
         <Image src={logo} alt="logo" />
@@ -27,14 +27,14 @@ import logo from "../assets/images/logo.svg";
         <div>
           <div></div>
           <h1
-            class="prata-regular md:text-3xl text-2xl text-grøn pb-4 pt-10 mt-28 border-t border-grøn max-w-lg"
+            class="prata-regular md:text-3xl text-2xl text-grøn pb-4 pt-10 mt-28 border-t border-grøn max-w-sm md:max-w-lg"
           >
             Sofie Heesche
           </h1>
           <h2 class="prata-regular md:text-5xl text-4xl text-grøn pb-10">
             En passioneret multimediedesign studerende
           </h2>
-          <div class="border-b border-grøn max-w-lg mb-20"></div>
+          <div class="border-b border-grøn max-w-sm md:max-w-lg mb-20"></div>
         </div>
         <Image
           src={portræt}
@@ -47,7 +47,7 @@ import logo from "../assets/images/logo.svg";
         justify-items-center
         py-28">
         <p
-          class="text-grøn text-base md:text-lg relative open-sans md:max-w-sm before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[1px] before:bg-grøn after:content-[''] after:absolute after:right-0 after:top-0 after:bottom-0 after:w-[1px] after:bg-grøn px-6"
+          class="text-grøn text-sm md:text-lg relative open-sans md:max-w-sm before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[1px] before:bg-grøn after:content-[''] after:absolute after:right-0 after:top-0 after:bottom-0 after:w-[1px] after:bg-grøn px-6"
         >
           Jeg har en stor passion for at fordybe mig i kreative processer og
           skabe æstetiske løsninger, der både inspirerer og engagerer.
@@ -150,10 +150,10 @@ import logo from "../assets/images/logo.svg";
       </div>
 
       <div class="pb-28 overflow-hidden w-full">
-        <div class="flex space-x-4 animate-slide">
+        <div class="flex space-x-4 animate-slide w-[calc(400px*4+1rem)]">
+          <!-- Tilføj 1rem til rummet mellem billederne -->
           <Image src={skitse} alt="" class="h-[400px] w-[400px] object-cover" />
           <Image src={spil} alt="" class="h-[400px] w-[400px] object-cover" />
-
           <Image
             src={moodboard}
             alt=""
@@ -164,20 +164,34 @@ import logo from "../assets/images/logo.svg";
             alt=""
             class="h-[400px] w-[400px] object-cover"
           />
-
           <Image
             src={girltalk}
             alt=""
             class="h-[400px] w-[400px] object-cover"
           />
-
           <Image src={skitse} alt="" class="h-[400px] w-[400px] object-cover" />
+          <Image src={spil} alt="" class="h-[400px] w-[400px] object-cover" />
+          <Image
+            src={moodboard}
+            alt=""
+            class="h-[400px] w-[400px] object-cover"
+          />
+          <Image
+            src={vildmad}
+            alt=""
+            class="h-[400px] w-[400px] object-cover"
+          />
+          <Image
+            src={girltalk}
+            alt=""
+            class="h-[400px] w-[400px] object-cover"
+          />
+          <!-- Duplikere billeder -->
         </div>
       </div>
-
       <div class="flex md:justify-end justify-center">
         <div class="border-r border-grøn md:max-w-md grid justify-items-center">
-          <h3 class="text-grøn prata-regular md:text-2xl text-xl pb-6">
+          <h3 class="text-grøn prata-regular md:text-2xl text-xl pb-6 pr-4">
             Jeg har erfaring med følgende programmer:
           </h3>
 
@@ -220,7 +234,7 @@ import logo from "../assets/images/logo.svg";
           <Image
             src={portræt2}
             alt="portrætbillede"
-            class="h-[490px] w-[385px]"
+            class="h-[490px] w-[395px]"
           />
         </div>
         <div>
@@ -273,13 +287,20 @@ import logo from "../assets/images/logo.svg";
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 100px; /* Cirkeldiameter */
-    height: 100px; /* Cirkeldiameter */
+    width: 70px; /* Cirkeldiameter */
+    height: 70px; /* Cirkeldiameter */
     overflow: hidden; /* Forhindrer tekst i at overskride cirklen */
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1000;
+  }
+
+  @media (min-width: 768px) {
+    .circle {
+      width: 100px;
+      height: 100px;
+    }
   }
 
   .text {
@@ -291,7 +312,7 @@ import logo from "../assets/images/logo.svg";
   }
 
   .content {
-    padding: 50px;
+    padding: 20px;
   }
 
   @keyframes rotate {
