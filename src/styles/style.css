@@ -9,5 +9,5 @@
   }
 }
 .animate-slide {
-  animation: slide 120s linear infinite; /* Længere tid for jævn animation */
+  animation: slide 160s linear infinite; /* Længere tid for jævn animation */
 }
