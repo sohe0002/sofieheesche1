@@ -25,9 +25,8 @@ import logo from "../assets/images/logo.svg";
     <section class="content">
       <div class="grid md:grid-cols-2">
         <div>
-          <div></div>
           <h1
-            class="prata-regular md:text-3xl text-2xl text-grøn pb-4 pt-10 mt-28 border-t border-grøn max-w-sm md:max-w-lg"
+            class="prata-regular md:text-3xl text-2xl text-grøn pb-4 pt-10 mt-12 border-t border-grøn max-w-sm md:max-w-lg"
           >
             Sofie Heesche
           </h1>
@@ -95,7 +94,7 @@ import logo from "../assets/images/logo.svg";
         </p>
       </div>
 
-      <div class="border-l border-grøn pl-4 mb-20">
+      <div class="border-l border-grøn pl-4 mb-10">
         <h3 class="text-grøn prata-regular md:text-2xl text-xl pb-6">
           Tekniske færdigheder
         </h3>
@@ -137,7 +136,48 @@ import logo from "../assets/images/logo.svg";
         </div>
       </div>
 
-      <div class="grid justify-items-center">
+      <div class="flex md:justify-end justify-center">
+        <div class="border-r border-grøn md:max-w-md grid justify-items-center">
+          <h3 class="text-grøn prata-regular md:text-2xl text-xl pb-6 pr-4">
+            Jeg har erfaring med følgende programmer:
+          </h3>
+
+          <div class="grid md:grid-cols-2 gap-12">
+            <div>
+              <ul
+                class="text-grøn list-disc pl-4 open-sans md:text-base text-sm"
+              >
+                <li>VsCode</li>
+                <ul class="list-disc pl-8">
+                  <li>Html</li>
+                  <li>Javascript</li>
+                  <li>Css</li>
+                  <ul class="list-disc pl-8">
+                    <li>Tailwind</li>
+                  </ul>
+                  <li>Motion One</li>
+                  <li>Astro</li>
+                  <li>Supabase</li>
+                </ul>
+              </ul>
+            </div>
+
+            <div>
+              <ul
+                class="text-grøn list-disc pl-4 open-sans md:text-base text-sm"
+              >
+                <li>Illustrator</li>
+                <li>Figma</li>
+                <li>Premiere Pro</li>
+                <li>Photoshop</li>
+                <li>InDesign</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid justify-items-center pt-28">
         <h2 class="prata-regular md:text-5xl text-4xl text-grøn">
           Mit tidligere arbejde
         </h2>
@@ -149,7 +189,7 @@ import logo from "../assets/images/logo.svg";
         </p>
       </div>
 
-      <div class="pb-28 overflow-hidden w-full">
+      <div class="pb-6 overflow-hidden w-full">
         <div class="flex space-x-4 animate-slide w-[calc(400px*4+1rem)]">
           <!-- Tilføj 1rem til rummet mellem billederne -->
           <Image src={skitse} alt="" class="h-[400px] w-[400px] object-cover" />
@@ -186,50 +226,10 @@ import logo from "../assets/images/logo.svg";
             alt=""
             class="h-[400px] w-[400px] object-cover"
           />
-          <!-- Duplikere billeder -->
-        </div>
-      </div>
-      <div class="flex md:justify-end justify-center">
-        <div class="border-r border-grøn md:max-w-md grid justify-items-center">
-          <h3 class="text-grøn prata-regular md:text-2xl text-xl pb-6 pr-4">
-            Jeg har erfaring med følgende programmer:
-          </h3>
-
-          <div class="grid md:grid-cols-2 gap-12">
-            <div>
-              <ul
-                class="text-grøn list-disc pl-4 open-sans md:text-base text-sm"
-              >
-                <li>VsCode</li>
-                <ul class="list-disc pl-8">
-                  <li>Html</li>
-                  <li>Javascript</li>
-                  <li>Css</li>
-                  <ul class="list-disc pl-8">
-                    <li>Tailwind</li>
-                  </ul>
-                  <li>Motion One</li>
-                  <li>Astro</li>
-                  <li>Supabase</li>
-                </ul>
-              </ul>
-            </div>
-            <div>
-              <ul
-                class="text-grøn list-disc pl-4 open-sans md:text-base text-sm"
-              >
-                <li>Illustrator</li>
-                <li>Figma</li>
-                <li>Premiere Pro</li>
-                <li>Photoshop</li>
-                <li>InDesign</li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
 
-      <div class="grid md:grid-cols-2 pt-36">
+      <div class="grid md:grid-cols-2 pt-28">
         <div class="pb-6">
           <Image
             src={portræt2}
