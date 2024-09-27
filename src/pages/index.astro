@@ -1,9 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
-import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
-import thumbsup from "../assets/images/thumbsup.png";
 import mail from "../assets/images/mail.svg";
 import telefon from "../assets/images/telefon.svg";
 import portræt from "../assets/images/portræt.jpg";
@@ -16,10 +14,10 @@ import portfoliosite from "../assets/images/portfoliosite.jpg";
 ---
 
 <MainLayout title="Sofie Heesche">
-  <article class="bg-beige px-20 md:px-40 py-20">
+  <article class="bg-beige px-20 md:px-40 pb-20">
     <div class="grid md:grid-cols-2">
       <div>
-        <h1 class="prata-regular md:text-3xl text-2xl text-grøn pb-4">
+        <h1 class="prata-regular md:text-3xl text-2xl text-grøn pb-4 pt-28">
           Sofie Heesche
         </h1>
         <h2 class="prata-regular md:text-5xl text-4xl text-grøn pb-6">
@@ -28,11 +26,12 @@ import portfoliosite from "../assets/images/portfoliosite.jpg";
       </div>
       <Image src={portræt} alt="portrætbillede" class="h-[500px] w-[380px]" />
     </div>
+
     <div class="grid
         justify-items-center
-        py-16">
+        py-28">
       <p
-        class="text-grøn md:text-md relative open-sans md:max-w-xs before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[1px] before:bg-grøn after:content-[''] after:absolute after:right-0 after:top-0 after:bottom-0 after:w-[1px] after:bg-grøn px-4"
+        class="text-grøn text-sm md:text-base relative open-sans md:max-w-xs before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[1px] before:bg-grøn after:content-[''] after:absolute after:right-0 after:top-0 after:bottom-0 after:w-[1px] after:bg-grøn px-4"
       >
         Jeg har en stor passion for at fordybe mig i kreative processer og skabe
         æstetiske løsninger, der både inspirerer og engagerer.
@@ -40,12 +39,12 @@ import portfoliosite from "../assets/images/portfoliosite.jpg";
     </div>
 
     <div class="grid md:grid-cols-2 justify-items-center pb-24">
-      <Image src={thumbsup} alt="" />
+      <Image src={moodboard1} alt="moodboard" class="h-[350px] w-[350px]" />
       <div>
-        <h3 class="prata-regular md:text-2xl text-xl text-grøn pt-6">
+        <h3 class="prata-regular text-2xl text-grøn pt-20 pb-2">
           Mine kompetencer
         </h3>
-        <ul class="open-sans text-grøn md:text-md text-sm">
+        <ul class="open-sans text-grøn text-sm md:text-base">
           <li>Grafisk design & visuel kommunikation</li>
           <li>Interaktiv design & brugeroplevelse</li>
           <li>Motion graphics & animation</li>
@@ -61,7 +60,7 @@ import portfoliosite from "../assets/images/portfoliosite.jpg";
         Skaber visuelle fortællinger, der forener æstetik og funktionalitet
       </h2>
       <p
-        class="text-grøn open-sans md:text-md text-sm lg:max-w-2xl pb-20 leading-6"
+        class="text-grøn open-sans text-sm md:text-base lg:text-base lg:max-w-2xl pb-20 leading-8"
       >
         Grafisk design og visuel kommunikation fascinerer mig, og jeg nyder at
         <strong>skabe visuelle fortællinger</strong>, der formidler budskaber på
@@ -81,7 +80,7 @@ import portfoliosite from "../assets/images/portfoliosite.jpg";
         Tekniske færdigheder
       </h3>
 
-      <div class="text-grøn md:text-md text-sm open-sans">
+      <div class="text-grøn md:text-base text-sm open-sans">
         <p>Idéudvikling og Research:</p>
         <ul class="list-disc pl-4 pb-6">
           <li>
@@ -122,13 +121,13 @@ import portfoliosite from "../assets/images/portfoliosite.jpg";
       <h2 class="prata-regular md:text-5xl text-4xl text-grøn">
         Mit tidligere arbejde
       </h2>
-      <p class="text-grøn open-sans md:text-md text-sm lg:max-w-md pt-4 pb-6">
+      <p class="text-grøn open-sans md:text-base text-sm lg:max-w-md pt-4 pb-6">
         I løbet af min studietid har jeg arbejdet på en række projekter, hvor
         jeg har udforsket flere forskellige aspekter af multimediedesign.
       </p>
     </div>
 
-    <div class="pb-10 overflow-hidden w-full">
+    <div class="pb-24 overflow-hidden w-full">
       <div class="flex space-x-4 animate-slide">
         <Image src={skitse} alt="" class="h-[400px] w-[400px] object-cover" />
         <Image src={spil} alt="" class="h-[400px] w-[400px] object-cover" />
@@ -168,7 +167,7 @@ import portfoliosite from "../assets/images/portfoliosite.jpg";
 
         <div class="grid md:grid-cols-2 gap-12">
           <div>
-            <ul class="text-grøn list-disc pl-4 open-sans md:text-md text-sm">
+            <ul class="text-grøn list-disc pl-4 open-sans md:text-base text-sm">
               <li>VsCode</li>
               <ul class="list-disc pl-8">
                 <li>Html</li>
@@ -184,7 +183,7 @@ import portfoliosite from "../assets/images/portfoliosite.jpg";
             </ul>
           </div>
           <div>
-            <ul class="text-grøn list-disc pl-4 open-sans md:text-md text-sm">
+            <ul class="text-grøn list-disc pl-4 open-sans md:text-base text-sm">
               <li>Illustrator</li>
               <li>Figma</li>
               <li>Premiere Pro</li>
@@ -210,9 +209,7 @@ import portfoliosite from "../assets/images/portfoliosite.jpg";
         >
           Interesseret i at bidrage og lære mere gennem praktik
         </h2>
-        <p
-          class="text-grøn open-sans md:text-md text-sm lg:max-w-lg leading-6 pb-6"
-        >
+        <p class="text-grøn open-sans md:text-base text-sm lg:max-w-lg pb-6">
           Jeg er meget interesseret i at finde en praktikplads, hvor jeg kan
           udvikle mine færdigheder yderligere og bidrage med mine kompetencer
           inden for grafisk design, UI/UX og front-end udvikling. Jeg vil meget
