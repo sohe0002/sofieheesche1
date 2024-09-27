@@ -1,5 +1,15 @@
 ---
-
+import { Image } from "astro:assets";
+import sh from "../assets/images/sh.svg";
 ---
 
-<div></div>
+<div class="bg-beige pb-10 flex items-center justify-center">
+  <div class="flex items-center w-full max-w-lg">
+    <hr class="border-t border-grøn flex-grow" />
+    <!-- Venstre linje -->
+    <Image src={sh} alt="logo" class="h-[30px] mx-4" />
+    <!-- Billede -->
+    <hr class="border-t border-grøn flex-grow" />
+    <!-- Højre linje -->
+  </div>
+</div>

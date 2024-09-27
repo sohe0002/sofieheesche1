@@ -12,212 +12,294 @@ import vildmad from "../assets/images/vildmad.jpg";
 import moodboard from "../assets/images/moodboard.jpg";
 import moodboard1 from "../assets/images/moodboard1.jpg";
 import girltalk from "../assets/images/girltalk.jpg";
+import logo from "../assets/images/logo.svg";
 ---
 
 <MainLayout title="Sofie Heesche">
   <article class="bg-beige px-20 md:px-40 pb-20">
-    <div class="grid md:grid-cols-2">
-      <div>
-        <h1 class="prata-regular md:text-3xl text-2xl text-grøn pb-4 pt-28">
-          Sofie Heesche
-        </h1>
-        <h2 class="prata-regular md:text-5xl text-4xl text-grøn pb-6">
-          En passioneret multimediedesign studerende
-        </h2>
+    <section>
+      <div class="circle" id="rotating-circle">
+        <Image src={logo} alt="logo" />
       </div>
-      <Image src={portræt} alt="portrætbillede" class="h-[500px] w-[380px]" />
-    </div>
+    </section>
+    <section class="content">
+      <div class="grid md:grid-cols-2">
+        <div>
+          <div></div>
+          <h1
+            class="prata-regular md:text-3xl text-2xl text-grøn pb-4 pt-10 mt-28 border-t border-grøn max-w-lg"
+          >
+            Sofie Heesche
+          </h1>
+          <h2 class="prata-regular md:text-5xl text-4xl text-grøn pb-10">
+            En passioneret multimediedesign studerende
+          </h2>
+          <div class="border-b border-grøn max-w-lg mb-20"></div>
+        </div>
+        <Image
+          src={portræt}
+          alt="portrætbillede"
+          class="h-[500px] w-[380px] md:ml-20"
+        />
+      </div>
 
-    <div class="grid
+      <div class="grid
         justify-items-center
         py-28">
-      <p
-        class="text-grøn text-sm md:text-base relative open-sans md:max-w-xs before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[1px] before:bg-grøn after:content-[''] after:absolute after:right-0 after:top-0 after:bottom-0 after:w-[1px] after:bg-grøn px-4"
-      >
-        Jeg har en stor passion for at fordybe mig i kreative processer og skabe
-        æstetiske løsninger, der både inspirerer og engagerer.
-      </p>
-    </div>
-
-    <div class="grid md:grid-cols-2 justify-items-center pb-24">
-      <Image src={moodboard1} alt="moodboard" class="h-[350px] w-[350px]" />
-      <div>
-        <h3 class="prata-regular text-2xl text-grøn pt-20 pb-2">
-          Mine kompetencer
-        </h3>
-        <ul class="open-sans text-grøn text-sm md:text-base">
-          <li>Grafisk design & visuel kommunikation</li>
-          <li>Interaktiv design & brugeroplevelse</li>
-          <li>Motion graphics & animation</li>
-          <li>Problemløsninger & konceptudvikling</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="grid justify-items-center">
-      <h2
-        class="prata-regular md:text-5xl text-4xl text-grøn lg:max-w-2xl pb-5"
-      >
-        Skaber visuelle fortællinger, der forener æstetik og funktionalitet
-      </h2>
-      <p
-        class="text-grøn open-sans text-sm md:text-base lg:text-base lg:max-w-2xl pb-20 leading-8"
-      >
-        Grafisk design og visuel kommunikation fascinerer mig, og jeg nyder at
-        <strong>skabe visuelle fortællinger</strong>, der formidler budskaber på
-        en klar og indbydende måde. Mit <strong>mål</strong> er at fortsætte med
-        at <strong>udforske de kreative muligheder</strong>, der findes på tværs
-        af forskellige medier og discipliner, og at <strong
-          >videreudvikle mine færdigheder</strong
-        > inden for design og konceptudvikling. Jeg stræber efter altid at skabe
-        noget, der ikke kun er <strong>visuelt tiltalende</strong>, men også <strong
-          >funktionelt</strong
-        > og <strong>meningsfuldt</strong>.
-      </p>
-    </div>
-
-    <div class="border-l border-grøn pl-4 mb-20">
-      <h3 class="text-grøn prata-regular md:text-2xl text-xl pb-6">
-        Tekniske færdigheder
-      </h3>
-
-      <div class="text-grøn md:text-base text-sm open-sans">
-        <p>Idéudvikling og Research:</p>
-        <ul class="list-disc pl-4 pb-6">
-          <li>
-            Erfaring med product benchmarking, SoMe-analyse og trendforskning.
-          </li>
-          <li>Design pattern research til produktudvikling.</li>
-        </ul>
-
-        <p>UI/UX Design:</p>
-        <ul class="list-disc pl-4 pb-6">
-          <li>Design af brugergrænseflader og interaktive oplevelser.</li>
-          <li>
-            Erfaring med wireframing og visuelt design i Figma og Illustrator.
-          </li>
-        </ul>
-
-        <p>Front-end Udvikling:</p>
-        <ul class="list-disc pl-4 pb-6">
-          <li>Færdigheder i HTML, CSS og JavaScript.</li>
-          <li>Erfaring med Tailwind, Motion One, Astro og Supabase.</li>
-        </ul>
-
-        <p>Grafisk Design:</p>
-        <ul class="list-disc pl-4 pb-6">
-          <li>Avanceret billedbehandling i Photoshop.</li>
-          <li>Layoutdesign i InDesign og Illustrator.</li>
-        </ul>
-
-        <p>Prototyping & Konceptudvikling:</p>
-        <ul class="list-disc pl-4 pb-6">
-          <li>Erfaring med prototyping i Figma og Visual Studio Code.</li>
-          <li>Fokus på at forene design og funktionalitet.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="grid justify-items-center">
-      <h2 class="prata-regular md:text-5xl text-4xl text-grøn">
-        Mit tidligere arbejde
-      </h2>
-      <p class="text-grøn open-sans md:text-base text-sm lg:max-w-md pt-4 pb-6">
-        I løbet af min studietid har jeg arbejdet på en række projekter, hvor
-        jeg har udforsket flere forskellige aspekter af multimediedesign.
-      </p>
-    </div>
-
-    <div class="pb-28 overflow-hidden w-full">
-      <div class="flex space-x-4 animate-slide">
-        <Image src={skitse} alt="" class="h-[400px] w-[400px] object-cover" />
-        <Image src={spil} alt="" class="h-[400px] w-[400px] object-cover" />
-
-        <Image
-          src={moodboard}
-          alt=""
-          class="h-[400px] w-[400px] object-cover"
-        />
-        <Image src={vildmad} alt="" class="h-[400px] w-[400px] object-cover" />
-
-        <Image src={girltalk} alt="" class="h-[400px] w-[400px] object-cover" />
-
-        <Image src={skitse} alt="" class="h-[400px] w-[400px] object-cover" />
-      </div>
-    </div>
-
-    <div class="flex md:justify-end justify-center">
-      <div class="border-r border-grøn md:max-w-md grid justify-items-center">
-        <h3 class="text-grøn prata-regular md:text-2xl text-xl pb-6">
-          Jeg har erfaring med følgende programmer:
-        </h3>
-
-        <div class="grid md:grid-cols-2 gap-12">
-          <div>
-            <ul class="text-grøn list-disc pl-4 open-sans md:text-base text-sm">
-              <li>VsCode</li>
-              <ul class="list-disc pl-8">
-                <li>Html</li>
-                <li>Javascript</li>
-                <li>Css</li>
-                <ul class="list-disc pl-8">
-                  <li>Tailwind</li>
-                </ul>
-                <li>Motion One</li>
-                <li>Astro</li>
-                <li>Supabase</li>
-              </ul>
-            </ul>
-          </div>
-          <div>
-            <ul class="text-grøn list-disc pl-4 open-sans md:text-base text-sm">
-              <li>Illustrator</li>
-              <li>Figma</li>
-              <li>Premiere Pro</li>
-              <li>Photoshop</li>
-              <li>InDesign</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="grid md:grid-cols-2 pt-36">
-      <div class="pb-6">
-        <Image
-          src={portræt2}
-          alt="portrætbillede"
-          class="h-[490px] w-[385px]"
-        />
-      </div>
-      <div>
-        <h2
-          class="prata-regular md:text-5xl text-4xl text-grøn pb-4 lg:max-w-lg"
+        <p
+          class="text-grøn text-base md:text-lg relative open-sans md:max-w-sm before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[1px] before:bg-grøn after:content-[''] after:absolute after:right-0 after:top-0 after:bottom-0 after:w-[1px] after:bg-grøn px-6"
         >
-          Interesseret i at bidrage og lære mere gennem praktik
-        </h2>
-        <p class="text-grøn open-sans md:text-base text-sm lg:max-w-lg pb-6">
-          Jeg er meget interesseret i at finde en praktikplads, hvor jeg kan
-          udvikle mine færdigheder yderligere og bidrage med mine kompetencer
-          inden for grafisk design, UI/UX og front-end udvikling. Jeg vil meget
-          gerne høre fra jer, hvis I ser et match mellem mine kompetencer og
-          jeres behov. Jeg ser frem til muligheden for at samarbejde og lære
-          mere om, hvordan jeg kan bidrage til jeres virksomhed.
+          Jeg har en stor passion for at fordybe mig i kreative processer og
+          skabe æstetiske løsninger, der både inspirerer og engagerer.
         </p>
-        <div class="pb-6">
-          <Button>Mit cv</Button>
-        </div>
+      </div>
 
-        <div class="flex items-center space-x-2 text-grøn open-sans pb-2">
-          <Image src={telefon} alt="telefon icon" />
-          <span>Telefon: +45 20 76 15 08</span>
-        </div>
-
-        <div class="flex items-center space-x-2 text-grøn open-sans">
-          <Image src={mail} alt="mail icon" />
-          <span>Mail: sofie.hee@hotmai.com</span>
+      <div class="grid md:grid-cols-2 justify-items-center pb-24">
+        <Image
+          src={moodboard1}
+          alt="moodboard"
+          class="h-[400px] w-[400px] border border-grøn p-5"
+        />
+        <div>
+          <h3 class="prata-regular text-2xl text-grøn pt-20 pb-2">
+            Mine kompetencer
+          </h3>
+          <ul class="open-sans text-grøn text-sm md:text-base">
+            <li>Grafisk design & visuel kommunikation</li>
+            <li>Interaktiv design & brugeroplevelse</li>
+            <li>Motion graphics & animation</li>
+            <li>Problemløsninger & konceptudvikling</li>
+          </ul>
         </div>
       </div>
-    </div>
+
+      <div class="grid justify-items-center">
+        <h2
+          class="prata-regular md:text-5xl text-4xl text-grøn lg:max-w-2xl pb-5"
+        >
+          Skaber visuelle fortællinger, der forener æstetik og funktionalitet
+        </h2>
+        <p
+          class="text-grøn open-sans text-sm md:text-base lg:text-base lg:max-w-2xl pb-20 leading-8"
+        >
+          Grafisk design og visuel kommunikation fascinerer mig, og jeg nyder at
+          <strong>skabe visuelle fortællinger</strong>, der formidler budskaber
+          på en klar og indbydende måde. Mit <strong>mål</strong> er at fortsætte
+          med at <strong>udforske de kreative muligheder</strong>, der findes på
+          tværs af forskellige medier og discipliner, og at <strong
+            >videreudvikle mine færdigheder</strong
+          > inden for design og konceptudvikling. Jeg stræber efter altid at skabe
+          noget, der ikke kun er <strong>visuelt tiltalende</strong>, men også <strong
+            >funktionelt</strong
+          > og <strong>meningsfuldt</strong>.
+        </p>
+      </div>
+
+      <div class="border-l border-grøn pl-4 mb-20">
+        <h3 class="text-grøn prata-regular md:text-2xl text-xl pb-6">
+          Tekniske færdigheder
+        </h3>
+
+        <div class="text-grøn md:text-base text-sm open-sans">
+          <p>Idéudvikling og Research:</p>
+          <ul class="list-disc pl-4 pb-6">
+            <li>
+              Erfaring med product benchmarking, SoMe-analyse og trendforskning.
+            </li>
+            <li>Design pattern research til produktudvikling.</li>
+          </ul>
+
+          <p>UI/UX Design:</p>
+          <ul class="list-disc pl-4 pb-6">
+            <li>Design af brugergrænseflader og interaktive oplevelser.</li>
+            <li>
+              Erfaring med wireframing og visuelt design i Figma og Illustrator.
+            </li>
+          </ul>
+
+          <p>Front-end Udvikling:</p>
+          <ul class="list-disc pl-4 pb-6">
+            <li>Færdigheder i HTML, CSS og JavaScript.</li>
+            <li>Erfaring med Tailwind, Motion One, Astro og Supabase.</li>
+          </ul>
+
+          <p>Grafisk Design:</p>
+          <ul class="list-disc pl-4 pb-6">
+            <li>Avanceret billedbehandling i Photoshop.</li>
+            <li>Layoutdesign i InDesign og Illustrator.</li>
+          </ul>
+
+          <p>Prototyping & Konceptudvikling:</p>
+          <ul class="list-disc pl-4 pb-6">
+            <li>Erfaring med prototyping i Figma og Visual Studio Code.</li>
+            <li>Fokus på at forene design og funktionalitet.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid justify-items-center">
+        <h2 class="prata-regular md:text-5xl text-4xl text-grøn">
+          Mit tidligere arbejde
+        </h2>
+        <p
+          class="text-grøn open-sans md:text-base text-sm lg:max-w-md pt-4 pb-6"
+        >
+          I løbet af min studietid har jeg arbejdet på en række projekter, hvor
+          jeg har udforsket flere forskellige aspekter af multimediedesign.
+        </p>
+      </div>
+
+      <div class="pb-28 overflow-hidden w-full">
+        <div class="flex space-x-4 animate-slide">
+          <Image src={skitse} alt="" class="h-[400px] w-[400px] object-cover" />
+          <Image src={spil} alt="" class="h-[400px] w-[400px] object-cover" />
+
+          <Image
+            src={moodboard}
+            alt=""
+            class="h-[400px] w-[400px] object-cover"
+          />
+          <Image
+            src={vildmad}
+            alt=""
+            class="h-[400px] w-[400px] object-cover"
+          />
+
+          <Image
+            src={girltalk}
+            alt=""
+            class="h-[400px] w-[400px] object-cover"
+          />
+
+          <Image src={skitse} alt="" class="h-[400px] w-[400px] object-cover" />
+        </div>
+      </div>
+
+      <div class="flex md:justify-end justify-center">
+        <div class="border-r border-grøn md:max-w-md grid justify-items-center">
+          <h3 class="text-grøn prata-regular md:text-2xl text-xl pb-6">
+            Jeg har erfaring med følgende programmer:
+          </h3>
+
+          <div class="grid md:grid-cols-2 gap-12">
+            <div>
+              <ul
+                class="text-grøn list-disc pl-4 open-sans md:text-base text-sm"
+              >
+                <li>VsCode</li>
+                <ul class="list-disc pl-8">
+                  <li>Html</li>
+                  <li>Javascript</li>
+                  <li>Css</li>
+                  <ul class="list-disc pl-8">
+                    <li>Tailwind</li>
+                  </ul>
+                  <li>Motion One</li>
+                  <li>Astro</li>
+                  <li>Supabase</li>
+                </ul>
+              </ul>
+            </div>
+            <div>
+              <ul
+                class="text-grøn list-disc pl-4 open-sans md:text-base text-sm"
+              >
+                <li>Illustrator</li>
+                <li>Figma</li>
+                <li>Premiere Pro</li>
+                <li>Photoshop</li>
+                <li>InDesign</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 pt-36">
+        <div class="pb-6">
+          <Image
+            src={portræt2}
+            alt="portrætbillede"
+            class="h-[490px] w-[385px]"
+          />
+        </div>
+        <div>
+          <h2
+            class="prata-regular md:text-5xl text-4xl text-grøn pb-4 lg:max-w-lg"
+          >
+            Interesseret i at bidrage og lære mere gennem praktik
+          </h2>
+          <p class="text-grøn open-sans md:text-base text-sm lg:max-w-lg pb-6">
+            Jeg er meget interesseret i at finde en praktikplads, hvor jeg kan
+            udvikle mine færdigheder yderligere og bidrage med mine kompetencer
+            inden for grafisk design, UI/UX og front-end udvikling. Jeg vil
+            meget gerne høre fra jer, hvis I ser et match mellem mine
+            kompetencer og jeres behov. Jeg ser frem til muligheden for at
+            samarbejde og lære mere om, hvordan jeg kan bidrage til jeres
+            virksomhed.
+          </p>
+          <div class="pb-6">
+            <Button>Mit cv</Button>
+          </div>
+
+          <div class="flex items-center space-x-2 text-grøn open-sans pb-2">
+            <Image src={telefon} alt="telefon icon" />
+            <span>Telefon: +45 20 76 15 08</span>
+          </div>
+
+          <div class="flex items-center space-x-2 text-grøn open-sans">
+            <Image src={mail} alt="mail icon" />
+            <span>Mail: sofie.hee@hotmai.com</span>
+          </div>
+        </div>
+      </div>
+    </section>
   </article>
+
+  <script>
+    window.addEventListener("scroll", () => {
+      const scrollAmount = window.scrollY;
+      const circle = document.getElementById("rotating-circle");
+
+      // Juster rotation baseret på scroll-mængden
+      const rotation = scrollAmount * 0.1; // Justér denne værdi for at ændre hastigheden
+      circle.style.transform = `rotate(${rotation}deg)`;
+    });
+  </script>
 </MainLayout>
+
+<style>
+  .circle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px; /* Cirkeldiameter */
+    height: 100px; /* Cirkeldiameter */
+    overflow: hidden; /* Forhindrer tekst i at overskride cirklen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  .text {
+    position: absolute; /* Gør det muligt at placere teksten korrekt */
+    width: 100%; /* Sørger for at teksten fylder cirklens bredde */
+    text-align: center; /* Centrerer teksten */
+    transform-origin: 50% 100%; /* Punktet for rotation er i bunden af cirklen */
+    animation: rotate 10s linear infinite; /* Animation for rotation */
+  }
+
+  .content {
+    padding: 50px;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+</style>
