@@ -24,7 +24,7 @@ import logo from "../assets/images/logo.svg";
     </section>
     <section class="content">
       <div class="grid md:grid-cols-2">
-        <div>
+        <div id="info">
           <h1
             class="prata-regular md:text-3xl text-2xl text-grøn pb-4 pt-10 mt-12 border-t border-grøn max-w-sm md:max-w-lg"
           >
@@ -72,7 +72,7 @@ import logo from "../assets/images/logo.svg";
         </div>
       </div>
 
-      <div class="grid justify-items-center">
+      <div class="grid justify-items-center" id="beskrivelse">
         <h2
           class="prata-regular md:text-5xl text-4xl text-grøn lg:max-w-2xl pb-5"
         >
@@ -280,6 +280,30 @@ import logo from "../assets/images/logo.svg";
       // Juster rotation baseret på scroll-mængden
       const rotation = scrollAmount * 0.1; // Justér denne værdi for at ændre hastigheden
       circle.style.transform = `rotate(${rotation}deg)`;
+    });
+
+    import { inView } from "motion";
+
+    // <-- inview info -->
+    const infoFadeIn = document.querySelector("#info");
+
+    inView(infoFadeIn, () => {
+      infoFadeIn.classList.add(
+        "animate__animated",
+        "animate__slideInLeft",
+        "animate__slow"
+      );
+    });
+
+    // <-- inview beskrivelse -->
+    const beskrivelseFadeUp = document.querySelector("#beskrivelse");
+
+    inView(beskrivelseFadeUp, () => {
+      beskrivelseFadeUp.classList.add(
+        "animate__animated",
+        "animate__slideInUp",
+        "animate__slow"
+      );
     });
   </script>
 </MainLayout>
