@@ -38,7 +38,7 @@ import logo from "../assets/images/logo.svg";
         <Image
           src={portræt}
           alt="portrætbillede"
-          class="h-[500px] w-[380px] md:ml-20"
+          class="h-[430px] md:h-[500px] w-[340px] md:w-[380px] md:ml-20"
         />
       </div>
 
@@ -124,7 +124,7 @@ import logo from "../assets/images/logo.svg";
 
           <p>Grafisk Design:</p>
           <ul class="list-disc pl-4 pb-6">
-            <li>Avanceret billedbehandling i Photoshop.</li>
+            <li>Billedbehandling i Photoshop.</li>
             <li>Layoutdesign i InDesign og Illustrator.</li>
           </ul>
 
@@ -190,7 +190,7 @@ import logo from "../assets/images/logo.svg";
       </div>
 
       <div class="pb-6 overflow-hidden w-full">
-        <div class="flex space-x-4 animate-slide w-[calc(400px*4+1rem)]">
+        <div class="flex space-x-4 animate-slide w-[calc(400px*10+1rem)]">
           <!-- Tilføj 1rem til rummet mellem billederne -->
           <Image src={skitse} alt="" class="h-[400px] w-[400px] object-cover" />
           <Image src={spil} alt="" class="h-[400px] w-[400px] object-cover" />
@@ -234,7 +234,7 @@ import logo from "../assets/images/logo.svg";
           <Image
             src={portræt2}
             alt="portrætbillede"
-            class="h-[490px] w-[395px]"
+            class="h-[430px] md:h-[490px] w-[390px] md:w-[395px]"
           />
         </div>
         <div>
@@ -265,7 +265,7 @@ import logo from "../assets/images/logo.svg";
 
           <div class="flex items-center space-x-2 text-grøn open-sans">
             <Image src={mail} alt="mail icon" />
-            <span>Mail: sofie.hee@hotmai.com</span>
+            <span>Mail: sofie.hee@hotmail.com</span>
           </div>
         </div>
       </div>
@@ -340,5 +340,18 @@ import logo from "../assets/images/logo.svg";
     100% {
       transform: rotate(360deg);
     }
+  }
+
+  <style > @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  .animate-slide {
+    animation: slide 30s linear infinite;
+    width: calc(400px * 7);
   }
 </style>
